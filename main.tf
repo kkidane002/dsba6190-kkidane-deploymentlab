@@ -1,4 +1,4 @@
-// Tags
+ // Tags
 locals {
   tags = {
     class      = var.tag_class
@@ -84,6 +84,7 @@ resource "azurerm_storage_account" "storage" {
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
+  is_hns_enabled           = true
 
   network_rules {
     default_action             = "Deny"
