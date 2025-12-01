@@ -1,4 +1,4 @@
- // Tags
+// Tags
 locals {
   tags = {
     class      = var.tag_class
